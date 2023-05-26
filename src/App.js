@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import { useState, useEffect } from 'react';
 import './App.css';
+import { Home, Task } from "./pages";
+import {images} from "./db";
+import { useBrowser } from "./context/browsercontext";
 
 function App() {
+  const { name, browserDispatch } = useBrowser();
+
+  const [backgroundImage, setBackgroundImage] = useState("");
+  useEffect(() => {
+    const bgImage = images[Math.floor(Math.random() * images.length)].image;
+    setBackgroundImage(bgImage);
+    const name = localStorage.getItem("userName");
+    browserDispatch({
+      type: "USER_NAME",
+      payload: name
+    });
+  }, [])
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app' style={{backgroundImage: `url("${backgroundImage}")`}}>
+      {name ? <Task /> : <Home />}
     </div>
   );
 }
