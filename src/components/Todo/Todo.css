@@ -2,7 +2,7 @@
     width: 20vw;
     max-height: 50vh;
     overflow-y: auto;
-    background-color: var(--todo-background);
+    background-color: #3c216b;
     opacity: .9;
     right: 2rem;
     bottom: 6rem;

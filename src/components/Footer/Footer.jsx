@@ -1,6 +1,6 @@
 import "./Footer.css";
 import github from "../../assets/logo/github-1.png";
-import twitter from "../../assets/logo/twitter-2.png";
+import pinterest from "../../assets/logo/pinterest -1.png";
 import linkedIn from "../../assets/logo/linkedIn-2.png";
 
 export const Footer = () => {
@@ -11,11 +11,11 @@ export const Footer = () => {
           <span role="img" aria-label="Love">
             ❤️
           </span>{" "}
-          by Prakash Sakari
+          by Himanshika Rawat
         </p>
         <div class="d-flex gap align-center padding-all-16">
           <a
-            href="https://github.com/prakashsakari/"
+            href="https://github.com/himanshirawat/"
             class="link"
             target="_blank"
             rel="noreferrer"
@@ -27,19 +27,19 @@ export const Footer = () => {
             />
           </a>
           <a
-            href="https://twitter.com/prakashsakari"
+            href="https://in.pinterest.com/himanshikarawat/"
             class="link"
             target="_blank"
             rel="noreferrer"
           >
             <img
               class="source-image logo-img"
-              src={twitter}
-              alt="Twitter"
+              src={pinterest}
+              alt="Pinterest"
             />
           </a>
           <a
-            href="https://www.linkedin.com/in/prakashsakari/"
+            href="https://www.linkedin.com/in/himanshi-rawat/"
             class="link"
             target="_blank"
             rel="noreferrer"

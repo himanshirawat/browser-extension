@@ -1,3 +1,7 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Oxygen:wght@300;400;700&family=Roboto&family=Source+Sans+Pro:wght@400;600&family=Wix+Madefor+Text&display=swap');
+
+
 .task-container {
     color: var(--text-color-primary);
     padding-top: 15rem;
@@ -90,6 +94,7 @@
 
 .quote {
   width: 70vw;
+  font-family: 'Dancing Script', cursive !important ;
 }
   
 .cta {

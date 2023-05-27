@@ -16,7 +16,7 @@ function App() {
       type: "USER_NAME",
       payload: name
     });
-  }, [])
+  }, [browserDispatch])
 
   
   return (

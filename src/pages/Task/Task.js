@@ -1,8 +1,8 @@
 import { useEffect, useState, Fragment } from "react";
 import { useBrowser } from "../../context/browsercontext";
 import { quotes } from "../../db";
-import { Weather } from "../../components/Weather";
-import {Todo} from "../../components/Todo";
+import { Weather } from "../../components/Weather/Weather";
+import {Todo} from "../../components/Todo/Todo";
 import "./Task.css";
 
 export const Task = () => {
@@ -23,7 +23,7 @@ export const Task = () => {
       type: "QUOTE",
       payload: newQuote
     });
-  }, []);
+  }, [browserDispatch]);
 
   useEffect(() => {
     const currentTask = localStorage.getItem("task");
@@ -37,7 +37,7 @@ export const Task = () => {
       localStorage.removeItem("date");
       localStorage.removeItem("checked");
     }
-  }, []);
+  }, [browserDispatch]);
 
   useEffect(() => {
     clock();

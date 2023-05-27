@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Roboto&family=Source+Sans+Pro:wght@400;600&family=Wix+Madefor+Text&display=swap');
+
 
 :root {
   --text-color-primary: #f8fafc;
@@ -10,7 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 body {
